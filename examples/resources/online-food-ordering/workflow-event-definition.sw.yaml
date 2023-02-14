@@ -1,0 +1,21 @@
+events:
+- name: Food Order Event
+  source: "/orders/"
+  type: org.orders
+  correlation:
+  - contextAttributeName: orderid
+- name: ETA Deadline Event
+  source: "/orderseta"
+  type: org.orders.eta
+  correlation:
+  - contextAttributeName: orderid
+- name: Order Picked Up Event
+  source: "/orderspickup"
+  type: org.orders.delivery
+  correlation:
+  - contextAttributeName: orderid
+- name: Order Delievered Event
+  source: "/orderdelivery"
+  type: org.orders.delivery
+  correlation:
+  - contextAttributeName: orderid

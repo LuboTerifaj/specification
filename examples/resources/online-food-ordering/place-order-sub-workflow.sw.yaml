@@ -1,0 +1,29 @@
+id: placeorderworkflow
+name: Place Order Workflow
+version: '1.0'
+specVersion: '0.8'
+start: Submit Order
+states:
+- name: Submit Order
+  type: event
+  onEvents:
+  - eventRefs:
+    - Food Order Event
+    actions:
+    - functionRef:
+        refName: Submit Order Function
+        arguments:
+          order: "${ .order }"
+      actionDataFilter:
+        results: "${ .results.status }"
+        toStateData: "${ .status }"
+    - functionRef:
+        refName: Get Order ETA Function
+        arguments:
+          customer: "${ .customerId }"
+          restaurantid: "${ .order.restaurantId }"
+          delivery: " ${ .delivery }"
+      actionDataFilter:
+        results: "${ .results.status }"
+        toStateData: "${ .status }"
+  end: true

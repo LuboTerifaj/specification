@@ -1,0 +1,11 @@
+functions:
+- name: Submit Order Function
+  operation: http://myorderservice.org/orders.json#submit
+- name: Get Order ETA Function
+  operation: http://myorderservice.org/orders.json#orderETA
+- name: Dispatch Courrier Function
+  operation: http://mydeliveryservice.org/deliveries.json#dispatch
+- name: Deliver Order Function
+  operation: http://mydeliveryservice.org/deliveries.json#deliver
+- name: Charge For Order Function
+  operation: http://mypaymentservice.org/payments.proto#PaymentService#ChargeUser
