@@ -1,6 +1,6 @@
-id: bankingtransactions
+id: customerbankingtransactions
 name: Customer Banking Transactions Workflow
-version: '1.0'
+version: '1.0.0'
 specVersion: '0.8'
 autoRetries: true
 constants:

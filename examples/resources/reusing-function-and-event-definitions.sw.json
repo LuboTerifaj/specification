@@ -1,6 +1,6 @@
 {
   "id": "paymentconfirmation",
-  "version": "1.0",
+  "version": "1.0.0",
   "specVersion": "0.8",
   "name": "Payment Confirmation Workflow",
   "description": "Performs Payment Confirmation",

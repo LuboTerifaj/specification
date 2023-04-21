@@ -1,6 +1,6 @@
 {
     "id": "customercreditcheck",
-    "version": "1.0",
+    "version": "1.0.0",
     "specVersion": "0.8",
     "name": "Customer Credit Check Workflow",
     "description": "Perform Customer Credit Check",
@@ -74,8 +74,8 @@
         },
         {
             "name": "RejectApplication",
-            "type": "operation",
-            "actionMode": "sequential",
+            "type": "operation",            
+            "actionMode": "sequential",            
             "actions": [
                 {
                     "functionRef": {

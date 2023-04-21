@@ -1,7 +1,7 @@
 {
  "id": "fillglassofwater",
  "name": "Fill glass of water workflow",
- "version": "1.0",
+ "version": "1.0.0",
  "specVersion": "0.8",
  "start": "Check if full",
  "functions": [

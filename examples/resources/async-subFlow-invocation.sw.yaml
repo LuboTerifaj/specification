@@ -1,5 +1,5 @@
 id: onboardcustomer
-version: '1.0'
+version: '1.0.0'
 specVersion: '0.8'
 name: Onboard Customer
 description: Onboard a Customer

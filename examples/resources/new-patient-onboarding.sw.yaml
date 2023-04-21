@@ -1,6 +1,6 @@
 id: patientonboarding
 name: Patient Onboarding Workflow
-version: '1.0'
+version: '1.0.0'
 specVersion: '0.8'
 start: Onboard
 states:
