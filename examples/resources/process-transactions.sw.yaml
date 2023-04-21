@@ -15,7 +15,7 @@ states:
       functionRef: Banking Service - Larger Tx
       condition: "${ .tx >= $CONST.largetxamount }"
     - name: Process Smaller Transaction
-      functionRef: Banking Service - Smaller Tx
+      functionRef: Banking Service - Smaller T
       condition: "${ .tx < $CONST.largetxamount }"
    end: true
 functions:

@@ -23,8 +23,7 @@ states:
  - name: CheckEventQuota
    type: switch
    dataConditions:
-    - condition: "${ try(.customerCount) != null and .customerCount > .quota.maxConsumedEvents
-      }"
+    - condition: "${ try(.customerCount) != null and .customerCount > .quota.maxConsumedEvents }"
       end:
        continueAs:
         workflowId: notifycustomerworkflow
