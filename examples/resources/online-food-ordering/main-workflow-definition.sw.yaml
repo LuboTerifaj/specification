@@ -36,6 +36,5 @@ states:
       results: "${ .outcome.status }"
       toStateData: "${ .status }"
   stateDataFilter:
-    output: '${ . | {"orderid": .id, "orderstatus": .status} | .orderstatus += ["Order
-      Completed"] }'
+    output: '${ . | {"orderid": .id, "orderstatus": .status} | .orderstatus += ["Order Completed"] }'
   end: true
