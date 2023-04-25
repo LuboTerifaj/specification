@@ -21,7 +21,7 @@ states:
        - functionRef: ScheduleAppt
          retryRef: ServicesNotAvailableRetryStrategy
          retryableErrors:
-        - ServiceNotAvailable
+         - ServiceNotAvailable
    onErrors:
     - errorRef: ServiceNotAvailable
       end: true
