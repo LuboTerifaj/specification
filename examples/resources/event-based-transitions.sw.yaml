@@ -30,11 +30,11 @@ states:
   end: true
 - name: HandleRejectedVisa
   type: operation
-    actions:
-      - subFlowRef: handleRejectedVisaWorkflowID
+  actions:
+    - subFlowRef: handleRejectedVisaWorkflowID
   end: true
 - name: HandleNoVisaDecision
   type: operation
-    actions:
-      - subFlowRef: handleNoVisaDecisionWorkflowId
+  actions:
+    - subFlowRef: handleNoVisaDecisionWorkflowId
   end: true
